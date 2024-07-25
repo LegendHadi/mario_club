@@ -147,3 +147,75 @@ p::selection{
 p::after{
     content: '...';
 }
+
+/* responsive styles */
+@media screen and (max-width: 800px){
+    .banner .welcome h2{
+        font-size: 30px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+    header{
+        padding: 8px;
+    }
+    header h1{
+        color: white;
+        border: 8px white solid;
+        padding: 0px 12px;
+        display: inline-block;
+        border-radius: 20px;
+    }
+    nav{
+        top: 68px;
+    }
+}
+@media screen and (max-width: 600px){
+    .banner .welcome h2{
+        font-size: 20px;
+    }
+    nav li{
+        font-size: 16px;
+    }
+    header h1{
+        border: 5px white solid;
+        font-size: 30px;
+    }
+    nav{
+        top: 60px;
+    }
+}
+@media screen and (max-width: 500px){
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 12px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 18px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 450px){
+    nav li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+}
